@@ -7,8 +7,8 @@ publisher = unnamed
 developer = unnamed
 
 [display]
-width = 1000
-height = 720
+width = 2400
+height = 1080
 high_dpi = 1
 samples = 0
 fullscreen = 0
