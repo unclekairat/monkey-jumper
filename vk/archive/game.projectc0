@@ -14,7 +14,7 @@ samples = 0
 fullscreen = 0
 update_frequency = 0
 vsync = 1
-display_profiles = /builtins/render/default.display_profilesc
+display_profiles = /main/res_1280_720.display_profilesc
 dynamic_orientation = 0
 
 [render]
