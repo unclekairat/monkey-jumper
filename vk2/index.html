@@ -123,7 +123,7 @@
 <body>
 	<div id="app-container" class="canvas-app-container">
 		<div id="canvas-container" class="canvas-app-canvas-container">
-			<canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="2400" height="1080"></canvas>
+			<canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="1280" height="720"></canvas>
 		</div>
 		<div class="buttons-background">
 		</div>
@@ -171,31 +171,15 @@
 		var game_canvas = document.getElementById('canvas');
 		var innerWidth = window.innerWidth;
 		var innerHeight = window.innerHeight - buttonHeight;
-		var width = 2400;
-		var height = 1080;
+		var width = 1280;
+		var height = 720;
 		var targetRatio = width / height;
 		var actualRatio = innerWidth / innerHeight;
 	
-		//Downscale fit
-		if (innerWidth < width || innerHeight < height) {
-			if (actualRatio > targetRatio) {
-				width = innerHeight * targetRatio;
-				height = innerHeight;
-				app_container.style.marginLeft = ((innerWidth - width) / 2) + "px";
-				app_container.style.marginTop = "0px";
-			}
-			else {
-				width = innerWidth;
-				height = innerWidth / targetRatio;
-				app_container.style.marginLeft = "0px";
-				app_container.style.marginTop = ((innerHeight - height) / 2) + "px";
-			}
-		}
-		else {
-			app_container.style.marginLeft = ((innerWidth - width) / 2) + "px";
-			app_container.style.marginTop = ((innerHeight - height) / 2) + "px";
-		}
 	
+		//Stretch
+		width = innerWidth;
+		height = innerHeight;
 	
 	
 	

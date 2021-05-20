@@ -7,8 +7,8 @@ publisher = unnamed
 developer = unnamed
 
 [display]
-width = 2400
-height = 1080
+width = 1280
+height = 720
 high_dpi = 1
 samples = 0
 fullscreen = 0
@@ -148,7 +148,7 @@ cssfile = /builtins/manifests/web/light_theme.css
 archive_location_prefix = archive
 show_fullscreen_button = 0
 show_made_with_defold = 0
-scale_mode = downscale_fit
+scale_mode = stretch
 splash_image = /assets/game_studio_logo_x480.png
 
 [particle_fx]
