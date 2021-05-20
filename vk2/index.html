@@ -117,6 +117,23 @@
 		background-position: center center;
 		background-image: url("game_studio_logo_x480.png");
 	}
+	
+    @media screen and (orientation: portrait) {
+      html {
+        /* Rotate the content container */
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        /* Set content width to viewport height */
+        width: 100vh;
+        /* Set content height to viewport width */
+        height: 100vw;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
+    }
+
 	</style>
 </head>
 
@@ -177,20 +194,10 @@
 		var actualRatio = innerWidth / innerHeight;
 	
 	
+		//Stretch
+		width = innerWidth;
+		height = innerHeight;
 	
-		//Fit
-		if (actualRatio > targetRatio) {
-			width = innerHeight * targetRatio;
-			height = innerHeight;
-			app_container.style.marginLeft = ((innerWidth - width) / 2) + "px";
-			app_container.style.marginTop = "0px";
-		}
-		else {
-			width = innerWidth;
-			height = innerWidth / targetRatio;
-			app_container.style.marginLeft = "0px";
-			app_container.style.marginTop = ((innerHeight - height) / 2) + "px";
-		}
 	
 	
 		app_container.style.width = width + "px";

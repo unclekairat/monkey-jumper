@@ -144,11 +144,11 @@ app_icon = /assets/app_icons/appicon.ico
 custom_heap_size = 0
 heap_size = 256
 htmlfile = /main/vk/vk_template.html
-cssfile = /builtins/manifests/web/light_theme.css
+cssfile = /main/vk/vk_styles.css
 archive_location_prefix = archive
 show_fullscreen_button = 0
 show_made_with_defold = 0
-scale_mode = fit
+scale_mode = stretch
 splash_image = /assets/game_studio_logo_x480.png
 
 [particle_fx]
